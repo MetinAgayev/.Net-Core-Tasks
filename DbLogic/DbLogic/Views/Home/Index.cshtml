@@ -1,0 +1,11 @@
+﻿@using DbLogic.Models;
+@model List<Product>
+
+<ul>
+    
+        @foreach(Product product in Model)
+        {
+              <li> @product.Name @product.Id</li>
+        }
+    
+</ul>
