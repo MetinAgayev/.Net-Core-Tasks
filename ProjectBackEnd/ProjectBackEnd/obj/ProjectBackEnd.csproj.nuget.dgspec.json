@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\metin\\source\\repos\\ProjectBackEnd\\ProjectBackEnd\\ProjectBackEnd.csproj": {}
+    "C:\\Users\\metin\\OneDrive\\Рабочий стол\\.net core\\.Net-Core-Tasks\\ProjectBackEnd\\ProjectBackEnd\\ProjectBackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\metin\\source\\repos\\ProjectBackEnd\\ProjectBackEnd\\ProjectBackEnd.csproj": {
+    "C:\\Users\\metin\\OneDrive\\Рабочий стол\\.net core\\.Net-Core-Tasks\\ProjectBackEnd\\ProjectBackEnd\\ProjectBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\metin\\source\\repos\\ProjectBackEnd\\ProjectBackEnd\\ProjectBackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\metin\\OneDrive\\Рабочий стол\\.net core\\.Net-Core-Tasks\\ProjectBackEnd\\ProjectBackEnd\\ProjectBackEnd.csproj",
         "projectName": "ProjectBackEnd",
-        "projectPath": "C:\\Users\\metin\\source\\repos\\ProjectBackEnd\\ProjectBackEnd\\ProjectBackEnd.csproj",
+        "projectPath": "C:\\Users\\metin\\OneDrive\\Рабочий стол\\.net core\\.Net-Core-Tasks\\ProjectBackEnd\\ProjectBackEnd\\ProjectBackEnd.csproj",
         "packagesPath": "C:\\Users\\metin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\metin\\source\\repos\\ProjectBackEnd\\ProjectBackEnd\\obj\\",
+        "outputPath": "C:\\Users\\metin\\OneDrive\\Рабочий стол\\.net core\\.Net-Core-Tasks\\ProjectBackEnd\\ProjectBackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,22 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.23, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.23, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.23, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

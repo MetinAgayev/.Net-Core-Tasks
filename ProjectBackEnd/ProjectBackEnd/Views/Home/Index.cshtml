@@ -1,17 +1,26 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿@model Section1VM
+
+@model Section2VM 
+
+
 <section id="section1">
     <div class="text">
         <h2>What are you looking for</h2>
     </div>
     <form action=""> <input type="email" placeholder="Your Email Adress"><button>Subscribe</button></form>
     <ul class="list-inline">
-        <li><a href="">Cake</a></li>
+        @*<li><a href="">Cake</a></li>
         <li><a href="">Cofee</a></li>
         <li><a href="">Pet Foods</a></li>
-        <li><a href="">Vegetables</a></li>
+        <li><a href="">Vegetables</a></li>*@
+
+        @foreach (Section1search section1 in Model.Section1Searches)
+        {
+            <li><a>@section1.Title</a></li>
+        }
     </ul>
 </section>
-
+ 
 <section id="section2">
     <div class="container-fluid">
         <div class="h2 text-center mb-5 mt-5">
@@ -19,7 +28,7 @@
         </div>
         <div class="row justify-content-between">
             <div class="col-lg-1-5 col-12">
-                <div class="product">
+                @*<div class="product">
                     <div class="top">
                         <img class="img1" src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-1.jpg" alt="">
                         <img class="img2" src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg" alt="">
@@ -58,7 +67,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*@
+
+                @model
             </div>
             <div class="col-lg-1-5 col-12">
                 <div class="product">
