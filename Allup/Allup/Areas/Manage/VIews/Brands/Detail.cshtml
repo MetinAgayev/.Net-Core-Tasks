@@ -1,0 +1,22 @@
+﻿@model  IEnumerable<Brands>
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="row">
+    <div class="col-lg-6 h3 mb-4 text-gray-800">
+        <h1>Setting Detail</h1>
+    </div>
+    <div class="col-lg-8 mx-auto">
+        <div class="card">
+            <div class="card-body">
+
+                <h5 class="card-title font-weight-bold">Name</h5>
+
+               <p>@Model</p>
+                <a asp-action="Index" class="btn btn-primary">Go Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+

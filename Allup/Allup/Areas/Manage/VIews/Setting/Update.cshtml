@@ -1,0 +1,59 @@
+﻿@model Settings
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="row">
+    <div class="col-lg-6 h3 mb-4 text-gray-800">
+        <h1>Setting Update</h1>
+    </div>
+    <div class="col-lg-6">
+        <img style="width:50%" src="~/assets/images/@Model.Logo" alt="Alternate Text" />
+    </div>
+</div>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="LogoImage">LogoImage</label>
+        <input class="form-control" asp-for="LogoImage" placeholder="Enter LogoImage">
+        <span asp-validation-for="LogoImage"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="SupportPhone">SupportPhone</label>
+        <input class="form-control" asp-for="SupportPhone" placeholder="Enter SupportPhone">
+        <span asp-validation-for="SupportPhone"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone">Phone</label>
+        <input class="form-control" asp-for="Phone" placeholder="Enter Phone">
+        <span asp-validation-for="Phone"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Email address</label>
+        <input class="form-control" asp-for="Email" placeholder="Enter Email">
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Address">Address</label>
+        <input class="form-control" asp-for="Address" placeholder="Enter Address">
+        <span asp-validation-for="Address"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="WorkDay">WorkDay</label>
+        <input class="form-control" asp-for="WorkDay" placeholder="Enter WorkDay">
+        <span asp-validation-for="WorkDay"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Offer"></label>
+        <input class="form-control" asp-for="Offer" placeholder="Enter Offer">
+        <span asp-validation-for="Offer"></span>
+       
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
